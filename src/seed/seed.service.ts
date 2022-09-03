@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import axios, { AxiosInstance } from 'axios';
+// import axios, { AxiosInstance } from 'axios';
 import { PokeResponse } from './interfaces/poke-response.interface';
 import { Model } from 'mongoose';
 import { Pokemon } from '../pokemon/entities/pokemon.entity';
@@ -8,7 +8,7 @@ import { AxiosAdapter } from '../common/adapters/axios.adapter';
 
 @Injectable()
 export class SeedService {
-  private readonly axios: AxiosInstance = axios;
+  // private readonly axios: AxiosInstance = axios;
 
   constructor(
     @InjectModel(Pokemon.name) private readonly pokemonmodel: Model<Pokemon>,
